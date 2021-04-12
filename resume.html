@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+   
+    <style>
+        .hole{
+            background-color: rgb(245, 245, 245);
+            height: 10000px;
+            width: 100%;
+            margin: 0px;
+            position: relative;
+            top:0px;
+            
+
+            }
+
+        .back{
+            background-color: rgb(92, 89, 89);
+            height: 400px;
+            position: relative;
+            top: 0px;
+        }
+        .strip{
+            background-color: rgb(224, 219, 219);
+            height: 60px;
+            position:relative;
+            top: 280px;
+            z-index: 1;
+           
+            
+           
+        }
+        .name{
+            background-color: rgb(235, 200, 46);
+            height: 100px;
+            width: 600px;
+            position: relative;
+            top:192px;
+            left: 300px;
+            cursor: pointer;
+            border-radius:10px;            
+            font-size: 60px;
+            font-family: 'Dancing Script', cursive;
+            text-align:center;
+            padding-top: 20px;
+            z-index: 1;
+            
+        }
+        img{
+            border: 6px dotted yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left:500px;
+         }
+        .address{
+            position: relative;
+            top: 5px;
+            left: 180px;
+            font-size: 15px;
+            font-family: 'Noto Sans', sans-serif;
+            color: rgb(82, 78, 78);
+            /*font-family: 'Pacifico', cursive;*/
+        }
+        .hr{
+         border: 2px solid rgb(114, 113, 112);
+         border-radius: 10px;
+         position: relative;
+         top:10px
+         }
+         .hr2{
+           
+            
+            border-radius: 20px;
+            position: relative;
+            top:60px;
+            left: 50%;
+            width: 3.5px;
+            height: 1250px;
+            background-color: rgb(114, 113, 112);;
+         }
+        .icon{
+           
+           
+            color: rgb(235, 200, 46);
+            position: relative;
+            top:60px;
+            left:22px;
+        }
+
+        
+        .profile{
+            font-size: 33px;
+            font-family: 'Noto Sans', sans-serif;
+            color: rgb(82, 78, 78);
+            position: relative;
+            top:10px;
+            left:90px;
+        }
+       
+        .obj{
+            font-size: 18px;
+            font-family: 'Noto Sans', sans-serif;
+            position: relative;
+            top:20px;
+            left:20px;
+            word-break: break-all;
+ 
+        }
+        .obj2{
+            font-size: 18px;
+            font-family: 'Noto Sans', sans-serif;
+            position: relative;
+            top:20px;
+            left:20px;
+            word-break: break-all;
+ 
+        }
+        .obj3{
+            font-size: 18px;
+            font-family: 'Noto Sans', sans-serif;
+            position: relative;
+            top:10px;
+            left:20px;
+            word-break: break-all;
+ 
+        }        
+        .icon2{
+           
+           
+           color: rgb(235, 200, 46);
+           position: relative;
+           top:41px;
+           left:18px;
+       }
+         
+       .skills{
+            font-size: 33px;
+            font-family: 'Noto Sans', sans-serif;
+            color: rgb(82, 78, 78);
+            position: relative;
+            top:0px;
+            left:90px;
+        }
+        .tech{
+            font-size: 22px;
+            font-family:'bold'
+
+
+        }
+        .r{
+            position: absolute;
+            left: 260px;
+            top:400px
+           
+        }
+        .add{
+            position: absolute;
+            left: 260px;
+            top:630px
+           
+        }
+        input[type='range'] {
+      overflow: hidden;
+      width: 180px;
+      margin: 0px;
+      border: 0px;
+      
+      padding: 0px;
+      -webkit-appearance: none;
+      background-color: #c5c1c1;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #f0ec09;
+      margin: 0px;
+      border: 0px;
+      
+      padding: 0px;
+      margin-top: 0px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      z-index: 1;
+      border-radius: 10px;
+      cursor:pointer;
+      margin: 0px;
+      border: 0px;
+      padding: 0px;
+      background: #e4c412;
+      box-shadow: -80px 0 0 80px #dfe218;
+    }
+        .sh{
+            font-size: 22px;
+            font-family:'bold';
+            position: relative;
+        }
+        .work{
+            font-size: 33px;
+            font-family: 'Noto Sans', sans-serif;
+            color: rgb(82, 78, 78);
+            position: relative;
+            top:10px;
+            left:90px;
+        }
+        .icon3{
+           color: rgb(235, 200, 46);
+           position: relative;
+           top:90px;
+           left:25px;
+         
+           
+          
+        } 
+        .img2{
+            position: relative;
+            height: 60px;
+            width: 60px;
+            background-color: yellow;
+
+        }
+       
+        .rside{
+            position: absolute;
+            left: 60px;
+
+        }
+        .con{
+            justify-content: center;
+            
+        }
+      
+
+    </style>
+</head>
+<body>
+  <div class="hole">
+      <div class="back">
+            <div class="strip"></div>
+            <div class="name">BRAIN DUDEY</div>
+            <img src="https://ii1.pepperfry.com/media/catalog/product/p/r/568x625/print-mantras-snooping-mickey-mouse-wall-sticker-print-mantras-snooping-mickey-mouse-wall-sticker-eqyg8m.jpg" alt="Avatar" style="width:200px;">
+        </div>
+        <div class="address">
+            Behind system on chip,Prosessor 0011010 | 11001-11001-10111 | hellohi@mychoice.com | WWW.Autodidact.com
+        </div>
+        <div class="hr">
+            
+        </div>
+
+        <div class="rside" style="width: 40%;">
+
+            <div class="icon">
+                <i class="fas fa-user-circle fa-3x"></i>
+           </div>
+            <div class="profile">Profile</div>
+            <div class="obj" >
+                <p style="justify-content:center;"><span></span> 
+                    Innovative optimized solution seeker.
+                    Excited to be at the deployment phase 
+                    of my career as a web developer.
+                    I am ambitious, adventurous,assidous,
+                    animated, and an alliteration advocate
+              </p>
+          </div>
+            <div class="icon2">
+             <i class="fab fa-accusoft fa-3x"></i>
+          </div>
+          <div class="skills">Skills</div>
+          <div class="tech"><p style="text-align: center; font-family:'Dela Gothic One', cursive;">Technical Skills</p></div>
+          <div style="font-size: 20px;">
+               <div style="position:relative;left: 25px;">
+                    JavaScript<br>
+                    CSS<br>
+                    HTML<br>
+                    React<br>
+                    Redux<br>
+                    Mongo<br>
+                    Deployment
+              </div>
+             <div class="r" >
+                <input type="range" name="" id="input">
+                <input type="range" name="" id=""><br>
+                <input type="range" name="" id=""><br>
+                <input type="range" name="" id=""><br>
+                <input type="range" name="" id=""><br>
+                <input type="range" name="" id=""><br>
+                <input type="range" name="" id=""><br>
+
+              </div>
+            </div>
+            <div class="tech"><p style="text-align: center; font-family:'Dela Gothic One', cursive;">Additional Skills</p></div>
+            <div style="font-size: 20px;">
+                 <div  style="position:relative;left: 25px;">
+                     Project Management<br>
+                     Recruitment<br>
+                     Business Development<br>
+                     Editing<br>
+                     Fundrasing<br>
+                 </div>
+              <div class="add">
+                 <input type="range" name="" id="input">
+                 <input type="range" name="" id=""><br>
+                 <input type="range" name="" id=""><br>
+                 <input type="range" name="" id=""><br>
+                 <input type="range" name="" id=""><br>
+               </div>
+            </div>
+        
+        
+            <div class="icon3">
+               
+                <i class="fas fa-briefcase fa-3x"></i>
+              
+          </div>
+           <div class="work">
+             <p>work experience</p>
+           </div>
+         <div class="obj2">
+             <p>
+                   <b>Event Manager</b> 
+                   &emsp;&emsp;&emsp;&emsp;&emsp;
+                   &emsp;&emsp;&emsp;&emsp;&emsp;
+                   &emsp;
+                     03/2014-02/2017
+           
+                C3 Present, Washington DC
+                </p>
+                <div class="con">
+              <p>
+               <ul>
+                   <li>
+                    Event managers plan and organise promotional, 
+                    business and social events. They're responsible
+                     for running a range of events, ensuring the target
+                      audience is engaged and the message of the event 
+                      is marketed properly. Events play a huge part in
+                       the success of a brand or an organisation.
+                   </li>
+                   <li>
+                    As an event manager, you'll organise conferences,
+                     seminars and exhibitions, as well as parties and 
+                     corporate incentive trips.
+                   </li>
+                   <li>
+                    You'll manage the whole process from the planning
+                     stage, right through to running the event and carrying 
+                     out the post-event evaluation. The role is primarily hands-on 
+                     and often involves working as part of a team.
+                   </li>
+               </ul>
+               </p>
+               </div>
+           </div>
+             
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="hr2">
+           
+    </div>
+
+
+
+
+    <div class="rside" style="width: 40%; left: 645px; top: 390px;">
+
+        <div>
+            <div class="icon3">
+               <i class="fas fa-briefcase fa-3x"></i>
+            </div>
+
+            <div class="work">
+                <p>work experience</p>
+            </div>
+       </div>
+
+        <div  class="obj2" style="position: relative;top: 0px;">
+            <p>
+                <div style="position:relative;top: 22px;left: 360px;">07/2014-01/2017</div>
+               <b>Community Relations<br> Manager</b><br>
+               
+               Gay & Lesbian Elder Housing, Los Angeles
+           </p>
+          <p style="justify-content:center;">
+           <ul>
+               <li>
+                Event managers plan and organise promotional, 
+                business and social events. They're responsible
+                 for running a range of events, ensuring the target
+                  audience is engaged and the message of the event 
+                  is marketed properly. 
+               </li>
+               <li>
+                As an event manager, you'll organise conferences,
+                 seminars and exhibitions, as well as parties and 
+                 corporate incentive trips.
+               </li>
+               <li>
+                You'll manage the whole process from the planning
+                 stage, right through to running the event and carrying 
+                 out the post-event evaluation. The role is primarily hands-on 
+                 and often involves working as part of a team.
+               </li>
+           </ul>
+           </p>
+       </div>
+
+
+    <div style="position: absolute;top: 520px;">   
+
+                <div class="icon3">
+                    <i class="fas fa-graduation-cap fa-3x"></i>
+               </div>
+                       <div class="work">
+                          <p>Education</p>
+                        </div>
+       <div class="obj3">
+        <p>
+            <div style="position:relative;top: 22px;left: 360px;">11/2018-06/2018</div>
+           <b>Engineering Immersion<br>Program</b><br>
+           Thinkful,Chicago,IL<br><br>
+           
+           
+          
+       </p>
+        <p style="justify-content:center; top: 0px;">
+        <ul>
+            <li>
+             Event managers plan and organise promotional, 
+             business and social events. They're responsible
+              for running a range of events, ensuring the target
+               audience is engaged and the message of the event 
+               is marketed properly. Events play a huge part in
+                the success of a brand or an organisation.
+            </li>
+            <li>
+             As an event manager, you'll organise conferences,
+              seminars and exhibitions, as well as parties and 
+              corporate incentive trips.
+            </li>
+            <li>
+             You'll manage the whole process from the planning
+              stage, right through to running the event and carrying 
+              out the post-event evaluation. The role is primarily hands-on 
+              and often involves working as part of a team.
+            </li>
+            <li>
+                You'll manage the whole process from the planning
+                 stage, right through to running the event and carrying 
+                 out the post-event evaluation. The role is primarily hands-on 
+                 and often involves working as part of a team.
+               </li>
+               <li>
+                You'll manage the whole process from the planning
+                 stage, right through to running the event and carrying 
+                 out the post-event evaluation. The role is primarily hands-on 
+                 and often involves working as part of a team.
+               </li>
+        </ul>
+        </p>
+      </div>
+   </div>
+      
+
+     
+
+     
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+    
+    
+
+    </div>
+    
+
+
+
+
+
+
+    
+       
+
+       
+    
+    
+</body>
+</html>
